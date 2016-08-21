@@ -9,13 +9,20 @@ import java.util.Date;
 
 import application.restclient.ClientApplication;
 
-
+/**
+ * @author Sean
+ * barcodescanner, scans bottle barcodes
+ */
 public class BarcodeScanner {
 
 	private static String drinkName;
 	private static String bottleType;
 	private static String dateScanned;
 	
+	/**
+	 * scan barcode string, barcode scanner should use key registration followed by enter. add current scanned date 
+	 * @throws IOException
+	 */
 	public static void scanCode() throws IOException {
 		while (true) {
 
